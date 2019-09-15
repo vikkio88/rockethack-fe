@@ -1,12 +1,8 @@
-export const languages = {
-    EN: 'English UK',
-    IT: 'Italian',
+export const langCodes = {
+    EN: 'english',
+    IT: 'italian'
 };
 
-export const langCodes = {
-    EN: 'en',
-    IT: 'it'
-}
 export const trips = {
     'lon-new': {
         id: 1, title: 'Newcastle - London', date: 'today', route: '/trips/lon-new', notifications: 1,

@@ -10,7 +10,8 @@ const iconMapping = {
 
 const Trip = ({ match: { params: { slug } }, lang }) => {
     const trip = trips[slug];
-    const hasAnnouncement = trip.announcements[lang] && trip.announcements[lang].length > 0;
+    console.log(trip.announcements, lang)
+    const hasAnnouncement = trip.announcements && trip.announcements[lang] && trip.announcements[lang].length > 0;
     return (
         <>
             <h2>{trip.title}</h2>

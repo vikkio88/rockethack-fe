@@ -30,13 +30,13 @@ class Main extends Component {
             <Provider store={store}>
                 <Router>
                     <MDBNavbar color="indigo" dark expand="md">
-                        <MDBNavbarBrand>
+                        <MDBNavbarBrand onClick={() => console.log('a')}>
                             <MDBIcon icon="train" /> IveTrains
-                    </MDBNavbarBrand>
+                        </MDBNavbarBrand>
                         <MDBNavbarToggler onClick={this.toggleCollapse} />
                         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                             <MDBNavbarNav left>
-                                <MDBNavItem active>
+                                <MDBNavItem>
                                     <MDBNavLink to="/">Trips</MDBNavLink>
                                 </MDBNavItem>
                                 <MDBNavItem>

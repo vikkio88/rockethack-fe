@@ -1,7 +1,8 @@
 import { LANGUAGE_CHANGED } from '../actions/app';
+import { langCodes } from '../../__mocks__';
 
 const initialState = {
-    lang: 'en',
+    lang: langCodes.EN,
 };
 
 export default (state = initialState, action = {}) => {
