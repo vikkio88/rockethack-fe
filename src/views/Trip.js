@@ -7,6 +7,10 @@ const Trip = ({ match: { params: { slug } } }) => {
     return (
         <>
             <h2>{trip.title}</h2>
+            <h4>date: {trip.date}</h4>
+            <p>
+                {trip.additionalInfo}
+            </p>
             <h3>Announcements</h3>
             <Announcements slug={slug} />
         </>
