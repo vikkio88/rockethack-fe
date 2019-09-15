@@ -11,6 +11,10 @@ const Trip = ({ match: { params: { slug } } }) => {
             <p>
                 {trip.additionalInfo}
             </p>
+            <h3>Ticket</h3>
+            <div className="d-flex justify-content-center align-items-center">
+                <img src="/ticket.png" style={{ width: '200px' }} alt="Loading Ticket..."/>
+            </div>
             <h3>Announcements</h3>
             <Announcements slug={slug} />
         </>
