@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { MDBListGroup, MDBListGroupItem, MDBIcon } from 'mdbreact';
 import { Spinner } from './misc';
 import { trips } from '../__mocks__';
+import { announcementService } from '../libs/api';
 
 const iconMapping = {
     'station': 'building',
@@ -16,6 +17,7 @@ class Announcements extends Component {
     };
 
     componentDidMount() {
+        announcementService.get(this.props.lang);
         setTimeout(() => { this.setState({ loading: false }) }, 1500);
     }
 
