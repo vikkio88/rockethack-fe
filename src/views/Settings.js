@@ -35,8 +35,7 @@ const stateToProps = ({ app }) => {
 
 const dispatchToProps = dispatch => {
     return {
-        switchLang(lang,a) {
-            console.log(a);
+        switchLang(lang) {
             dispatch(languageChanged(lang));
         }
     };
