@@ -30,4 +30,5 @@ export const trips = {
         }
     },
     'new-lon': { id: 2, title: 'London - Newcastle', date: 'tomorrow', route: '/trips/new-lon', additionalInfo: '0 Change', },
+    'lon-man': { id: 3, title: 'London - Manchester', date: '27/10/2019', route: '/trips/lon-man', additionalInfo: '1 Change (Birmingham New Street)', },
 };
