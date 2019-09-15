@@ -1,7 +1,7 @@
 export const langCodes = {
     EN: 'english',
-    FR: 'french',
-    ES: 'spanish',
+    //FR: 'french',
+    //ES: 'spanish',
     IT: 'italian'
 };
 
